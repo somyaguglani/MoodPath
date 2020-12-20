@@ -1,6 +1,7 @@
 import React from "react";
 import Discover from "../Discover/Discover";
 import css from "../Home/Home.module.css";
+import Counselors from "../Counselors/Counselors";
 function Home() {
   return (
     <>
@@ -14,6 +15,7 @@ function Home() {
           get help, anytime, anywhere.
         </p>
       </div>
+      <Counselors />
     </>
   );
 }

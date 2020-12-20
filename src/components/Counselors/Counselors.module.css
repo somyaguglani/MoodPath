@@ -1,0 +1,69 @@
+.CounselorsContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 3rem;
+  background-color: rgb(41, 160, 220);
+}
+
+.CounselorsContainer > h1 {
+  color: white;
+  font-weight: 300;
+  font-size: 2.7rem;
+  margin: 4rem 4rem 0rem 4rem;
+  text-align: center;
+}
+
+.CounselorsContainer > p {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 200;
+  width: 80%;
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+  text-align: center;
+  padding: 2rem;
+}
+
+@media screen and (max-width: 960px) {
+  .CounselorsContainer > h1 {
+    font-size: 2rem;
+  }
+  .CounselorsContainer > p {
+    font-size: 1.1rem;
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .CounselorsContainer > h1 {
+    font-size: 1.8rem;
+  }
+  .CounselorsContainer > p {
+    font-size: 0.9rem;
+    width: 90%;
+  }
+}
+
+.ListContainer {
+  display: flex;
+  list-style-type: none;
+  margin-top: 3rem;
+}
+
+img {
+  width: 7rem;
+  height: 7rem;
+  background-color: black;
+  margin: 0.1rem;
+  border-radius: 50%;
+}
+
+@media screen and (max-width: 1000px) {
+  img {
+    width: 5rem;
+    height: 5rem;
+  }
+}
