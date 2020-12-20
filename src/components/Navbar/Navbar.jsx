@@ -20,7 +20,7 @@ function Navbar() {
     <>
       <nav className={css.Navbar}>
         <div className={css.NavbarContainer}>
-          <Link to="/" className={css.NavbarLogo}>
+          <Link to="/" className={css.NavbarLogo} onClick={closeMobileMenu}>
             MOODPATH
             <GiDirectionSigns className={css.MoodpathIcon} />
           </Link>

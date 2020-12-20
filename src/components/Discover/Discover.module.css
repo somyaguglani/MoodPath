@@ -1,0 +1,52 @@
+.DiscoverContainer {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("/src/images/backgroundimage.jpg") center center/cover no-repeat;
+  height: 90vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);
+  object-fit: contain;
+}
+
+.DiscoverContainer > h1 {
+  color: white;
+  font-size: 5rem;
+  margin-top: -100px;
+}
+
+.DiscoverContainer > p {
+  color: white;
+  font-size: 2rem;
+  margin-top: 10px;
+}
+
+.DiscoverButton {
+  margin-top: 4rem;
+  padding: 0.4rem 2rem 0.4rem 2rem;
+}
+
+.DiscoverButton:hover {
+  background-color: white;
+  outline: none;
+  color: black;
+}
+
+@media screen and (max-width: 960px) {
+  .DiscoverContainer > h1 {
+    font-size: 4rem;
+    margin-top: -150px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .DiscoverContainer > h1 {
+    font-size: 2rem;
+    margin-top: -100px;
+  }
+  .DiscoverContainer > p {
+    font-size: 1.5rem;
+  }
+}

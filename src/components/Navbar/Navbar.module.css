@@ -75,6 +75,26 @@
   display: none;
 }
 
+button {
+  font-size: 1.3rem;
+  background: transparent;
+  color: white;
+  outline: none;
+  border: 0;
+  font-family: inherit;
+  outline: solid;
+  outline-width: 1px;
+  padding: 0.2rem 1rem 0.2rem 1rem;
+}
+
+button:hover {
+  color: orange;
+  outline: inset;
+  border: 0;
+  font-family: inherit;
+  transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
 @media screen and (max-width: 960px) {
   .NavItem {
     position: relative;
@@ -143,23 +163,8 @@
     color: #fff;
     font-size: 2rem;
   }
-}
 
-button {
-  font-size: 1.3rem;
-  background: transparent;
-  color: white;
-  outline: none;
-  border: 0;
-  font-family: inherit;
-  outline: solid;
-  padding: 0.2rem 0.4rem 0.2rem 0.4rem;
-}
-
-button:hover {
-  color: orange;
-  outline: inset;
-  border: 0;
-  font-family: inherit;
-  transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
+  button {
+    padding: 0.3rem 3rem 0.3rem 3rem;
+  }
 }
