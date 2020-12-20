@@ -1,0 +1,47 @@
+.MissionContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 3rem;
+  background-color: rgb(41, 160, 220);
+}
+
+.MissionContainer > h1 {
+  color: white;
+  font-weight: 300;
+  font-size: 2.7rem;
+  margin-top: 4rem;
+}
+
+.MissionContainer > p {
+  color: white;
+  font-size: 1.7rem;
+  font-weight: 200;
+  width: 50%;
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+  text-align: center;
+  padding: 2rem;
+}
+
+@media screen and (max-width: 960px) {
+  .MissionContainer > h1 {
+    font-size: 2.2rem;
+  }
+  .MissionContainer > p {
+    font-size: 1.3rem;
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .MissionContainer > h1 {
+    font-size: 2rem;
+  }
+  .MissionContainer > p {
+    font-size: 1.2rem;
+    width: 90%;
+  }
+}
