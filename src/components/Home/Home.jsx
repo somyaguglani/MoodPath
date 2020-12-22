@@ -1,7 +1,8 @@
 import React from "react";
-import Discover from "../Discover/Discover";
 import css from "../Home/Home.module.css";
+import Discover from "../Discover/Discover";
 import Counselors from "../Counselors/Counselors";
+import HowToUse from "../HowToUse/HowToUse";
 function Home() {
   return (
     <>
@@ -16,6 +17,7 @@ function Home() {
         </p>
       </div>
       <Counselors />
+      <HowToUse />
     </>
   );
 }

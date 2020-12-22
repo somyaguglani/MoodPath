@@ -1,0 +1,116 @@
+.HowToUseContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 3rem;
+  background-color: rgb(41, 160, 220);
+}
+
+.InnerFlexbox {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin: 5rem 25% 4.5rem 25%;
+  align-self: center;
+}
+
+.ArrowIcon {
+  color: white;
+  font-size: 3rem;
+}
+.HowToUseContainer > h1 {
+  color: white;
+  font-weight: 300;
+  font-size: 2.7rem;
+  margin: 4rem 4rem 0rem 4rem;
+  text-align: center;
+}
+
+.HowToUseContainer > p {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 200;
+  width: 50%;
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+  text-align: center;
+  padding: 2rem;
+}
+
+.IntroPara {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 200;
+  width: 60%;
+  padding: 1rem;
+}
+
+@media screen and (max-width: 960px) {
+  .HowToUseContainer > h1 {
+    font-size: 2rem;
+  }
+  .HowToUseContainer > p {
+    font-size: 1.1rem;
+    width: 80%;
+  }
+  .IntroPara {
+    font-size: 1.1rem;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .HowToUseContainer > h1 {
+    font-size: 1.8rem;
+  }
+  .HowToUseContainer > p {
+    font-size: 0.9rem;
+    width: 90%;
+  }
+  .IntroPara {
+    font-size: 0.9rem;
+    width: 100%;
+  }
+}
+
+.PuzzleImage {
+  width: 16rem;
+  height: 16rem;
+  background-color: black;
+  border-radius: 0%;
+}
+
+@media screen and (max-width: 1024px) {
+  .PuzzleImage {
+    width: 8rem;
+    height: 8rem;
+  }
+  .HowToUseContainer > p {
+    font-size: 0.9rem;
+    width: 60%;
+  }
+  .IntroPara {
+    font-size: 0.9rem;
+    width: 60%;
+  }
+  .InnerFlexbox {
+    margin: 3rem 15% 4rem 15%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .PuzzleImage {
+    width: 7rem;
+    height: 7rem;
+  }
+  .HowToUseContainer > p {
+    font-size: 0.9rem;
+    width: 100%;
+  }
+  .IntroPara {
+    font-size: 0.9rem;
+    width: 100%;
+  }
+}
