@@ -35,15 +35,6 @@ function Counselors() {
         <li>
           <img src={process.env.PUBLIC_URL + "/logo192.png"} alt="logo" />
         </li>
-        <li>
-          <img src={process.env.PUBLIC_URL + "/logo192.png"} alt="logo" />
-        </li>
-        <li>
-          <img src={process.env.PUBLIC_URL + "/logo192.png"} alt="logo" />
-        </li>
-        <li>
-          <img src={process.env.PUBLIC_URL + "/logo192.png"} alt="logo" />
-        </li>
       </ul>
 
       <p>

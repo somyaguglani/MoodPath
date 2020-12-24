@@ -3,6 +3,8 @@ import css from "../Home/Home.module.css";
 import Discover from "../Discover/Discover";
 import Counselors from "../Counselors/Counselors";
 import HowToUse from "../HowToUse/HowToUse";
+import CarouselOfReviews from "../CarouselOfReviews/CarouselOfReviews";
+
 function Home() {
   return (
     <>
@@ -18,6 +20,7 @@ function Home() {
       </div>
       <Counselors />
       <HowToUse />
+      <CarouselOfReviews />
     </>
   );
 }
