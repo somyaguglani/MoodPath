@@ -1,0 +1,94 @@
+.FooterContainer {
+  background-color: black;
+  padding: 4rem 0 2rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h2 {
+  font-weight: 300;
+}
+.EndLinks {
+  color: white;
+  font-weight: 300;
+  margin: 0.3rem;
+  font-size: 1.2rem;
+}
+
+.EndHeadings {
+  color: white;
+  font-size: 2rem;
+
+  margin: 0.7rem 0.3rem;
+  font-weight: 300;
+}
+.FooterLinks {
+  width: 100%;
+  max-width: 1000px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.FooterLinksWrapper {
+  display: flex;
+  gap: 2rem;
+}
+
+.FooterLinkItems {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 16px;
+  text-align: left;
+  width: fit-content;
+  box-sizing: border-box;
+}
+
+.EndIconsContainer {
+  display: flex;
+  gap: 2rem;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.EndIcons {
+  font-size: 2rem;
+}
+
+@media screen and (max-width: 1024px) {
+  .EndHeadings {
+    font-size: 1.5rem;
+  }
+  .EndLinks {
+    font-size: 1.2rem;
+  }
+
+  .EndIcons {
+    font-size: 1.4rem;
+  }
+  .EndIconsContainer {
+    gap: 0.5rem;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .EndHeadings {
+    font-size: 1.2rem;
+  }
+  .EndLinks {
+    font-size: 0.9rem;
+  }
+
+  .EndIcons {
+    font-size: 1.2rem;
+  }
+  .EndIconsContainer {
+    gap: 0.4rem;
+  }
+}

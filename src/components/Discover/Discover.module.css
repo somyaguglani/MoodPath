@@ -52,3 +52,14 @@
     font-size: 1.5rem;
   }
 }
+@media screen and (max-width: 400px) {
+  .DiscoverContainer > h1 {
+    font-size: 1.7rem;
+    margin-top: -100px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .DiscoverContainer > p {
+    font-size: 1.2rem;
+  }
+}

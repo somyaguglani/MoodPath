@@ -31,7 +31,7 @@
 
 .HowToUseContainer > p {
   color: white;
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   font-weight: 200;
   width: 50%;
   margin-top: 1rem;
@@ -42,7 +42,7 @@
 
 .IntroPara {
   color: white;
-  font-size: 1.5rem;
+  font-size: 1.7em;
   font-weight: 200;
   width: 60%;
   padding: 1rem;
@@ -89,11 +89,11 @@
     height: 8rem;
   }
   .HowToUseContainer > p {
-    font-size: 1rem;
+    font-size: 1.5rem;
     width: 60%;
   }
   .IntroPara {
-    font-size: 1rem;
+    font-size: 1.4rem;
     width: 60%;
   }
   .InnerFlexbox {
@@ -107,11 +107,11 @@
     height: 7rem;
   }
   .HowToUseContainer > p {
-    font-size: 1rem;
+    font-size: 0.9rem;
     width: 100%;
   }
   .IntroPara {
-    font-size: 1rem;
+    font-size: 0.9rem;
     width: 100%;
   }
 }
