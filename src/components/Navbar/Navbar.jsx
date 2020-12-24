@@ -35,7 +35,11 @@ function Navbar() {
 
           <ul className={clicked ? css.NavMenuActive : css.NavMenu}>
             <li className={css.NavItem}>
-              <Link to="/" className={css.NavLinks} onClick={closeMobileMenu}>
+              <Link
+                to="/faq"
+                className={css.NavLinks}
+                onClick={closeMobileMenu}
+              >
                 FAQ
               </Link>
             </li>

@@ -1,0 +1,76 @@
+.Heading {
+  color: white;
+  font-size: 3rem;
+  font-weight: 300;
+}
+
+.FlexForImage {
+  display: flex;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("/src/images/smallbackgroundimage.jpg") center center/cover no-repeat;
+  height: 12rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.ContactUsContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 3rem 3rem;
+  background-color: rgb(41, 160, 220);
+}
+
+p {
+  color: white;
+  font-size: 1.1rem;
+}
+
+.InnerFlexBox {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 7rem;
+  margin: 3rem;
+}
+
+.Address {
+  color: white;
+  padding: 2rem 10rem 2rem 3rem;
+  background-color: grey;
+  border-radius: 0.7rem;
+}
+
+label {
+  display: inline-block;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  color: white;
+  margin-top: 0.6rem;
+}
+
+input {
+  display: block;
+  padding-left: 0.5rem;
+  outline: none;
+  border-radius: 0.2rem;
+  height: 2rem;
+  width: 18rem;
+  border: none;
+}
+
+textarea {
+  display: block;
+  width: 18rem;
+  padding-left: 0.5rem;
+  outline: none;
+  border-radius: 0.2rem;
+  border: none;
+}
+
+.FormButtons {
+  margin-top: 2rem;
+}

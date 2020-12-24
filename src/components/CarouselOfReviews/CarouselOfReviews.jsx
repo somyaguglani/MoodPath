@@ -61,7 +61,7 @@ function CarouselOfReviews() {
                 />
               </div>
 
-              <div className={css.InnerFlex}>
+              <div className={css.InnerFlexTwo}>
                 <img
                   className={css.ProfileImage}
                   src={process.env.PUBLIC_URL + "/logo192.png"}

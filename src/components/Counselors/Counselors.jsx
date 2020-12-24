@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import css from "../Counselors/Counselors.module.css";
+
 const SMALL_BOUNDRY = 4;
 const LARGER_BOUNDRY = 7;
 
