@@ -1,0 +1,19 @@
+.Heading {
+  color: white;
+  font-size: 3rem;
+  font-weight: 300;
+}
+
+.FlexForImage {
+  display: flex;
+  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
+    url("/src/images/smallbackgroundimage.jpg") center center/cover no-repeat;
+  height: 15rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.InnerFlex {
+  display: flex;
+  flex-direction: column;
+}
