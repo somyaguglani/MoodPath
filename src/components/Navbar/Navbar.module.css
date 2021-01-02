@@ -1,5 +1,5 @@
 .Navbar {
-  background: linear-gradient(90deg, rgb(28, 27, 27) 0%, rgb(26, 23, 23) 100%);
+  background: #02203c;
   height: 80px;
   display: flex;
   justify-content: center;
@@ -59,8 +59,9 @@
 }
 
 .NavLinks:hover {
-  color: orange;
   transition: all 0.2s ease-out;
+  text-decoration: underline;
+  text-underline-offset: 0.5rem;
 }
 
 .MenuIcons {
@@ -77,22 +78,11 @@
 
 button {
   font-size: 1.3rem;
-  background: transparent;
   color: white;
-  outline: none;
   border: 0;
   font-family: inherit;
-  outline: solid;
-  outline-width: 1px;
   padding: 0.2rem 1rem 0.2rem 1rem;
-}
-
-button:hover {
-  color: orange;
-  outline: inset;
-  border: 0;
-  font-family: inherit;
-  transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
+  background-color: transparent;
 }
 
 @media screen and (max-width: 960px) {
@@ -120,7 +110,7 @@ button:hover {
     height: 90vh;
     position: absolute;
     top: 80px;
-    background: #242222;
+    background: #02203c;
     left: 0;
     opacity: 1;
     transition: all 0.5s ease;
@@ -134,12 +124,14 @@ button:hover {
     width: 100%;
     height: fit-content;
     display: table;
-    margin-top: 2rem;
+    margin-top: 5rem;
+    font-size: 1.3rem;
   }
 
   .NavLinks:hover {
-    color: orange;
     border-radius: 0;
+    background-color: #626ee3;
+    text-decoration: none;
   }
 
   .NavbarLogo {
@@ -166,5 +158,8 @@ button:hover {
 
   button {
     padding: 0.3rem 3rem 0.3rem 3rem;
+    font-size: 1.3rem;
+    border: none;
+    outline: none;
   }
 }

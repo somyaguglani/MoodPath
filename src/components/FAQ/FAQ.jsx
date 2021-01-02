@@ -1,6 +1,7 @@
 import React from "react";
 import css from "../FAQ/FAQ.module.css";
 import FrequentlyAskedQuestionsArray from "../../helpers/FrequentlyAskedQuestionsArray.js";
+
 function FAQ() {
   return (
     <>

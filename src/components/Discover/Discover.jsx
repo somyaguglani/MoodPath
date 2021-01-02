@@ -8,7 +8,7 @@ function Discover() {
       <h1>You deserve to be happy</h1>
       <p>What are you waiting for?</p>
       <Link to="/login">
-        <button className={css.DiscoverButton}>Get Started</button>
+        <button className={css.DiscoverButton}>Get Started </button>
       </Link>
     </div>
   );
