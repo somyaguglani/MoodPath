@@ -12,9 +12,9 @@ function FAQ() {
       <div className={css.InnerFlex}>
         {FrequentlyAskedQuestionsArray.map((item, index) => {
           return (
-            <div key={index}>
-              <h2>{item.question}</h2>
-              <p>{item.answer}</p>
+            <div className={css.QuestionsContainer} key={index}>
+              <h2 className={css.Question}>{item.question}</h2>
+              <p className={css.Answer}>{item.answer}</p>
             </div>
           );
         })}

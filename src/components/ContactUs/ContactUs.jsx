@@ -44,7 +44,7 @@ function ContactUs() {
         </p>
 
         <div className={css.InnerFlexBox}>
-          {isSubmitted ? (
+          {isSubmitted ? ( 
             <div>
               <p style={{ fontSize: `1.3rem`, color: ` #02203c` }}>
                 Thanks! We've received your submission and we'll get back to you
