@@ -1,6 +1,5 @@
 import React, { useState } from "react";
-// import css from "../ContactUs/ContactUs.module.css";
-import css from "../UserProfile/UserProfile.module.css";
+import css from "../ContactUs/ContactUs.module.css";
 import { Link } from "react-router-dom";
 
 function ContactUs() {
