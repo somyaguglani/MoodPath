@@ -1,0 +1,97 @@
+.Heading {
+  color: white;
+  font-size: 3rem;
+  font-weight: 300;
+  text-align: center;
+}
+
+.FlexForImage {
+  display: flex;
+  background: linear-gradient(rgba(2, 32, 60, 0.639), rgb(2, 32, 60, 0.639)),
+    url("/src/images/smallbackgroundimage.jpg") center center/cover no-repeat;
+  height: 15rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.UserProfileContainer {
+  display: flex;
+  flex-direction: row;
+  margin: 3rem 1rem 2rem 1rem;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2rem;
+}
+.InfoHeading {
+  color: #02203c;
+  font-size: 3rem;
+  font-weight: 500;
+}
+.Information {
+  font-weight: 400;
+  color: #02203c;
+}
+.ProfilePicContainer {
+  display: flex;
+  width: fit-content;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  margin-left: 0.5rem;
+}
+
+.UserInfoContainer {
+  display: flex;
+  flex-direction: column;
+  margin-left: 2rem;
+  gap: 2rem;
+  align-items: flex-start;
+}
+
+.NamesContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.UserIcons {
+  font-size: 1.4rem;
+  margin-right: 1.7rem;
+}
+
+.FormButtons {
+  margin-top: 0.7rem;
+  padding: 0.8rem 2.6rem 0.8rem 2.6rem;
+  background-color: #626ee3;
+  border-radius: 25px;
+  font-size: 1.4rem;
+}
+
+.FormButtons:hover {
+  background-color: #535dc5;
+  outline: none;
+}
+
+@media screen and (max-width: 960px) {
+  .InfoHeading {
+    color: #02203c;
+    font-size: 1.8rem;
+    font-weight: 500;
+  }
+  .Information {
+    font-weight: 400;
+    color: #02203c;
+    font-size: 1.1rem;
+  }
+  .UserIcons {
+    font-size: 1.4rem;
+    margin-right: 1rem;
+  }
+  .UserProfileContainer {
+    gap: 0.7rem;
+  }
+  .FormButtons {
+    font-size: 1rem;
+  }
+}

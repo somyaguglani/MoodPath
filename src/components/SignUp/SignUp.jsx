@@ -12,8 +12,6 @@ function SignUp() {
     dateofcreation: ``,
   });
 
-  const [isSubmitted, changeSubmit] = useState(false);
-
   const handleChange = (e) => {
     const { name, value } = e.target;
 
@@ -24,7 +22,7 @@ function SignUp() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    changeSubmit((isSubmitted) => !isSubmitted);
+    //call here
   };
 
   return (

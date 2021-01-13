@@ -1,16 +1,13 @@
 import React from "react";
 import css from "../HowToUse/HowToUse.module.css";
 import { ImArrowDown } from "react-icons/im";
+import image from "../../images/puzzleimage.jpg";
 function HowToUse() {
   return (
     <div className={css.HowToUseContainer}>
       <h1>Get matched to the best counselor for you</h1>
       <div className={css.InnerFlexbox}>
-        <img
-          className={css.PuzzleImage}
-          src={process.env.PUBLIC_URL + "/logo192.png"}
-          alt="logo"
-        />
+        <img className={css.PuzzleImage} src={image} alt="puzzleImage" />
 
         <p className={css.IntroPara}>
           Answer a few questions to find a therapist that fits your needs and

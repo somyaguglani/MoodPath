@@ -9,8 +9,6 @@ function Login() {
 
   //ask how form is cleared, how to add required
 
-  const [isSubmitted, changeSubmit] = useState(false);
-
   const handleChange = (e) => {
     const { name, value } = e.target;
 
@@ -21,7 +19,7 @@ function Login() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    changeSubmit((isSubmitted) => !isSubmitted);
+    //call here
   };
 
   return (
@@ -31,7 +29,7 @@ function Login() {
       </div>
 
       <div className={css.LoginContainer}>
-        <p className = {css.InformationMessage}>Log in to your account </p>
+        <p className={css.InformationMessage}>Log in to your account </p>
         <div className={css.InnerFlexBox}>
           <form>
             <div>

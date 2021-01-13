@@ -9,6 +9,8 @@ import FAQ from "./components/FAQ/FAQ";
 import Reviews from "./components/Reviews/Reviews";
 import Login from "./components/Login/Login";
 import SignUp from "./components/SignUp/SignUp";
+import UserProfile from "./components/UserProfile/UserProfile";
+import TestQuestions from "./components/TestQuestions/TestQuestions";
 function App() {
   return (
     <>
@@ -16,11 +18,12 @@ function App() {
         <Navbar />
         <Switch>
           <Route path="/" exact component={Home} />
-          <Route path="/contact-us" component={ContactUs} />
+          <Route path="/contact-us" component={UserProfile} />
           <Route path="/faq" component={FAQ} />
           <Route path="/reviews" component={Reviews} />
           <Route path="/login" component={Login} />
           <Route path="/signup" component={SignUp} />
+          <Route path="/testquestions" component={TestQuestions} />
         </Switch>
       </Router>
       <Footer />

@@ -1,6 +1,9 @@
 import React, { useState } from "react";
 import css from "../Counselors/Counselors.module.css";
-
+import image1 from "../../images/counselor1.jpg";
+import image2 from "../../images/counselor2.jpg";
+import image3 from "../../images/counselor3.jpg";
+import image4 from "../../images/counselor4.jpg";
 // import images from "../../images/counselor1.jpg";
 const SMALL_BOUNDRY = 4;
 const LARGER_BOUNDRY = 7;
@@ -26,16 +29,16 @@ function Counselors() {
 
       <ul className={css.ListContainer}>
         <li>
-          <img src={process.env.PUBLIC_URL + "/logo192.png"} alt="logo" />
+          <img src={image1} alt="counselor" />
         </li>
         <li>
-          <img src={process.env.PUBLIC_URL + "/logo192.png"} alt="logo" />
+          <img src={image2} alt="counselor" />
         </li>
         <li>
-          <img src={process.env.PUBLIC_URL + "/logo192.png"} alt="logo" />
+          <img src={image3} alt="counselor" />
         </li>
         <li>
-          <img src={process.env.PUBLIC_URL + "/logo192.png"} alt="logo" />
+          <img src={image4} alt="counselor" />
         </li>
       </ul>
 

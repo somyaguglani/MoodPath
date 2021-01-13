@@ -58,8 +58,9 @@ img {
   width: 7rem;
   height: 7rem;
   background-color: black;
-  margin: 0.1rem;
+  margin: 0.3rem;
   border-radius: 50%;
+  border: 4px white solid;
 }
 
 @media screen and (max-width: 1000px) {

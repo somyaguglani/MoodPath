@@ -1,0 +1,101 @@
+.Heading {
+  color: white;
+  font-size: 3rem;
+  font-weight: 300;
+  text-align: center;
+}
+
+.FlexForImage {
+  display: flex;
+  background: linear-gradient(rgba(2, 32, 60, 0.639), rgb(2, 32, 60, 0.639)),
+    url("/src/images/smallbackgroundimage.jpg") center center/cover no-repeat;
+  height: 15rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.ReviewsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  column-gap: 0.4rem;
+}
+
+.InnerFlex {
+  margin: 30px 5px 15px;
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 0 2px 10px rgba(50, 50, 93, 0.1);
+  padding: 45px 20px 20px;
+  position: relative;
+  height: 320px;
+  display: flex;
+  border-top: 4px solid #626ee3;
+  flex-direction: column;
+}
+
+.PhotoDiv {
+  display: inline-block;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 20px 0 0;
+  flex: 0 0 auto;
+  position: absolute;
+  left: calc(50% - 30px);
+  top: -30px;
+  box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.4);
+  background-color: #fff;
+}
+
+.Image {
+  width: 60px;
+  vertical-align: middle;
+}
+.Name {
+  font-size: 18px;
+  text-align: center;
+  margin: 0 0 10px;
+  font-weight: 400;
+  color: #02203c;
+}
+
+.Stats {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 0 20px;
+  justify-content: center;
+}
+
+.ParaDiv {
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #dadada transparent;
+}
+.Outer {
+  flex: 1 1 320px;
+  margin: 0 10px;
+  max-width: 500px;
+}
+.Description {
+  color: #445d6e;
+  line-height: 1.7;
+  /* max-width: 15rem; */
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-corner {
+  background-color: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #dadada;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
