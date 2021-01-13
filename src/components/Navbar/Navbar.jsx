@@ -3,17 +3,23 @@ import { GiDirectionSigns } from "react-icons/gi";
 import { FiMenu } from "react-icons/fi";
 import { FiX } from "react-icons/fi";
 import css from "../Navbar/Navbar.module.css";
-import { Link } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
+import { connect } from "react-redux";
+import { logoutUser } from "../../actions/getDoctorReviews";
 
-function Navbar() {
+function Navbar({ isLoggedIn, logoutUser }) {
   const [clicked, changeClicked] = useState(false);
-
+  const history = useHistory();
   const handleClick = () => {
     changeClicked((prevClicked) => !prevClicked);
   };
 
   const closeMobileMenu = () => {
     changeClicked((prevClicked) => false);
+  };
+  const logout = async () => {
+    await logoutUser();
+    history.push("/login");
   };
 
   return (
@@ -34,52 +40,64 @@ function Navbar() {
           </div>
 
           <ul className={clicked ? css.NavMenuActive : css.NavMenu}>
-            <li className={css.NavItem}>
-              <Link
-                to="/faq"
-                className={css.NavLinks}
-                onClick={closeMobileMenu}
-              >
-                FAQ
-              </Link>
-            </li>
-            <li className={css.NavItem}>
-              <Link
-                to="/reviews"
-                className={css.NavLinks}
-                onClick={closeMobileMenu}
-              >
-                Reviews
-              </Link>
-            </li>
-            <li className={css.NavItem}>
-              <Link
-                to="/contact-us"
-                className={css.NavLinks}
-                onClick={closeMobileMenu}
-              >
-                Contact Us
-              </Link>
-            </li>
-            <li className={css.NavItem}>
-              <Link
-                to="/login"
-                className={css.NavLinks}
-                onClick={closeMobileMenu}
-              >
-                <button className={css.MenuButton}>Login</button>
-              </Link>
-            </li>
+            {isLoggedIn ? (
+              <>
+                <li className={css.NavItem}>
+                  <Link
+                    to="/faq"
+                    className={css.NavLinks}
+                    onClick={closeMobileMenu}
+                  >
+                    FAQ
+                  </Link>
+                </li>
+                <li className={css.NavItem}>
+                  <Link
+                    to="/reviews"
+                    className={css.NavLinks}
+                    onClick={closeMobileMenu}
+                  >
+                    Reviews
+                  </Link>
+                </li>
+                <li className={css.NavItem}>
+                  <Link
+                    to="/contact-us"
+                    className={css.NavLinks}
+                    onClick={closeMobileMenu}
+                  >
+                    Contact Us
+                  </Link>
+                </li>
+                <li className={css.NavItem}>
+                  <Link to="#" className={css.NavLinks} onClick={logout}>
+                    Logout
+                  </Link>
+                </li>
+              </>
+            ) : (
+              <>
+                <li className={css.NavItem}>
+                  <Link
+                    to="/login"
+                    className={css.NavLinks}
+                    onClick={closeMobileMenu}
+                  >
+                    <button className={css.MenuButton}>Login</button>
+                  </Link>
+                </li>
 
-            <li className={css.NavItem}>
-              <Link
-                to="/signup"
-                className={css.NavLinks}
-                onClick={closeMobileMenu}
-              >
-                <button className={css.MenuButton}>Sign-Up</button>
-              </Link>
-            </li>
+                <li className={css.NavItem}>
+                  <Link
+                    to="/signup"
+                    className={css.NavLinks}
+                    onClick={closeMobileMenu}
+                  >
+                    <button className={css.MenuButton}>Sign-Up</button>
+                  </Link>
+                </li>
+              </>
+            )}
           </ul>
         </div>
       </nav>
@@ -87,4 +105,7 @@ function Navbar() {
   );
 }
 
-export default Navbar;
+const mapStateToProps = (state) => ({
+  isLoggedIn: state.getDoctorReviews.isLoggedIn,
+});
+export default connect(mapStateToProps, { logoutUser })(Navbar);

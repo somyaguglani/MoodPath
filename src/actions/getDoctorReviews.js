@@ -3,6 +3,8 @@ import {
   USER_LOGIN,
   USER_LOGIN_FAILED,
   USER_LOGIN_FAIL_PASS,
+  FILL_USER_INFO,
+  LOGOUT_USER,
 } from "./types";
 const axios = require("axios");
 let url = "https://minorp.herokuapp.com";
@@ -53,7 +55,23 @@ export const userLogin = (payload) => async (dispatch) => {
 
 export const getUserInfo = () => async (dispatch) => {
   try {
-    axios({ url: `${url}/` });
+    let { data } = await axios({
+      url: `${url}/user/me`,
+      method: "GET",
+      headers: { "x-auth-token": localStorage.getItem("token") },
+    });
+    dispatch({
+      type: FILL_USER_INFO,
+      payload: data.data,
+    });
+  } catch (err) {
+    console.log(err);
+  }
+};
+
+export const logoutUser = () => async (dispatch) => {
+  try {
+    dispatch({ type: LOGOUT_USER });
   } catch (err) {
     console.log(err);
   }

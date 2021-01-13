@@ -15,7 +15,7 @@ import { FiUser, FiPhone } from "react-icons/fi";
 
 //get user details here
 
-function UserProfile({ getUserInfo }) {
+function UserProfile({ getUserInfo, userInfo }) {
   useEffect(() => {
     getUserInfo();
   }, []);
@@ -28,7 +28,7 @@ function UserProfile({ getUserInfo }) {
       <div className={css.UserProfileContainer}>
         <div className={css.ProfilePicContainer}>
           <img className={css.UserProfileImage} src={image} alt="logo" />
-          <h2 className={css.Information}>Hi Navjyot</h2>
+          <h2 className={css.Information}>Hi {userInfo.name}</h2>
         </div>
 
         <div className={css.UserInfoContainer}>
@@ -36,30 +36,34 @@ function UserProfile({ getUserInfo }) {
 
           <div className={css.NamesContainer}>
             <FiUser className={css.UserIcons} />
-            <h2 className={css.Information}>Name : Navjyot</h2>
+            <h2 className={css.Information}>Name : {userInfo.name}</h2>
           </div>
           <div className={css.NamesContainer}>
             <AiOutlineMail className={css.UserIcons} />
             <h2 className={css.Information}>
-              Verified Email : navjot20@gmail.com
+              Verified Email : {userInfo.email}
             </h2>
           </div>
 
           <div className={css.NamesContainer}>
             <FiPhone className={css.UserIcons} />
-            <h2 className={css.Information}>Verified Phone : 9711078159</h2>
+            <h2 className={css.Information}>
+              Verified Phone : {userInfo.phone}
+            </h2>
           </div>
           <div className={css.NamesContainer}>
             <FiUser className={css.UserIcons} />
-            <h2 className={css.Information}>Gender : Male</h2>
+            <h2 className={css.Information}>Gender : {userInfo.gender}</h2>
           </div>
           <div className={css.NamesContainer}>
             <AiOutlineHome className={css.UserIcons} />
-            <h2 className={css.Information}>Address : Delhi</h2>
+            <h2 className={css.Information}>Address : {userInfo.address}</h2>
           </div>
           <div className={css.NamesContainer}>
             <AiOutlineCalendar className={css.UserIcons} />
-            <h2 className={css.Information}> Date Of Birth: 12/05/1998</h2>
+            <h2 className={css.Information}>
+              Date Of Birth: {userInfo.dateofcreation}
+            </h2>
           </div>
 
           <h2 style={{ marginTop: `2rem` }} className={css.Information}>
@@ -74,4 +78,7 @@ function UserProfile({ getUserInfo }) {
   );
 }
 
-export default connect(null, { getUserInfo })(UserProfile);
+const mapStateToProps = (state) => ({
+  userInfo: state.getDoctorReviews.userInfo,
+});
+export default connect(mapStateToProps, { getUserInfo })(UserProfile);
