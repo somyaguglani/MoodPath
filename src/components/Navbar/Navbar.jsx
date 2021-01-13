@@ -70,6 +70,16 @@ function Navbar() {
                 <button className={css.MenuButton}>Login</button>
               </Link>
             </li>
+
+            <li className={css.NavItem}>
+              <Link
+                to="/signup"
+                className={css.NavLinks}
+                onClick={closeMobileMenu}
+              >
+                <button className={css.MenuButton}>Sign-Up</button>
+              </Link>
+            </li>
           </ul>
         </div>
       </nav>

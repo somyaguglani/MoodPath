@@ -1,12 +1,13 @@
 import React, { useState } from "react";
 import css from "../Counselors/Counselors.module.css";
 
+// import images from "../../images/counselor1.jpg";
 const SMALL_BOUNDRY = 4;
 const LARGER_BOUNDRY = 7;
 
 function Counselors() {
   // put your counsellors array here and replace them with the logo images
-
+  // console.log(images);
   const [currentIndex, changeIndex] = useState(7);
 
   const changeArraySize = () => {

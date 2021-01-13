@@ -1,0 +1,1 @@
+export const GET_DOCTOR_REVIEWS = `GET_DOCTOR_REVIEWS`;

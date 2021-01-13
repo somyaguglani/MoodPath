@@ -36,13 +36,13 @@
 
 .NavMenu {
   display: grid;
-  grid-template-columns: repeat(4, auto);
+  grid-template-columns: repeat(5, auto);
   grid-gap: 10px;
   list-style: none;
   text-align: center;
   width: 60vw;
   justify-content: end;
-  margin-right: 2rem;
+  margin-right: 1rem;
 }
 
 .NavItem {
@@ -77,10 +77,11 @@
 }
 
 button {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   color: white;
   border: 0;
   font-family: inherit;
+  font-weight: 400;
   padding: 0.2rem 1rem 0.2rem 1rem;
   background-color: transparent;
 }
