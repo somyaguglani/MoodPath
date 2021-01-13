@@ -12,9 +12,9 @@ import {
 function Footer() {
   return (
     <div className={css.FooterContainer}>
-      <div class={css.FooterLinks}>
+      <div className={css.FooterLinks}>
         <div className={css.FooterLinksWrapper}>
-          <div class={css.FooterLinkItems}>
+          <div className={css.FooterLinkItems}>
             <h2 className={css.EndHeadings}>About Us</h2>
             <p className={css.EndLinks}>How it works</p>
             <p className={css.EndLinks}>Testimonials</p>
@@ -22,7 +22,7 @@ function Footer() {
             <p className={css.EndLinks}>Investors</p>
             <p className={css.EndLinks}>Terms of Service</p>
           </div>
-          <div class={css.FooterLinkItems}>
+          <div className={css.FooterLinkItems}>
             <h2 className={css.EndHeadings}>Contact Us</h2>
             <p className={css.EndLinks}>Contact</p>
             <p className={css.EndLinks}>Support</p>
@@ -31,14 +31,14 @@ function Footer() {
           </div>
         </div>
         <div className={css.FooterLinksWrapper}>
-          <div class={css.FooterLinkItems}>
+          <div className={css.FooterLinkItems}>
             <h2 className={css.EndHeadings}>Videos</h2>
             <p className={css.EndLinks}>Submit Video</p>
             <p className={css.EndLinks}>Ambassadors</p>
             <p className={css.EndLinks}>Agency</p>
             <p className={css.EndLinks}>Influencer</p>
           </div>
-          <div class={css.FooterLinkItems}>
+          <div className={css.FooterLinkItems}>
             <h2 className={css.EndHeadings}>Social Media</h2>
             <p className={css.EndLinks}>Instagram</p>
             <p className={css.EndLinks}>Facebook</p>

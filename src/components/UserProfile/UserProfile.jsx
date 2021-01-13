@@ -1,9 +1,11 @@
-import React from "react";
+import React, { useEffect } from "react";
 import css from "../UserProfile/UserProfile.module.css";
 import { Link } from "react-router-dom";
+import { getUserInfo } from "../../actions/getDoctorReviews";
+import { connect } from "react-redux";
 import image from "../../images/counselor1.jpg";
 
-import { GiDirectionSigns } from "react-icons/gi";
+// import { GiDirectionSigns } from "react-icons/gi";
 import {
   AiOutlineMail,
   AiOutlineHome,
@@ -13,7 +15,10 @@ import { FiUser, FiPhone } from "react-icons/fi";
 
 //get user details here
 
-function UserProfile() {
+function UserProfile({ getUserInfo }) {
+  useEffect(() => {
+    getUserInfo();
+  }, []);
   return (
     <>
       <div className={css.FlexForImage}>
@@ -22,7 +27,7 @@ function UserProfile() {
 
       <div className={css.UserProfileContainer}>
         <div className={css.ProfilePicContainer}>
-          <img classname={css.UserProfileImage} src={image} alt="logo" />
+          <img className={css.UserProfileImage} src={image} alt="logo" />
           <h2 className={css.Information}>Hi Navjyot</h2>
         </div>
 
@@ -69,4 +74,4 @@ function UserProfile() {
   );
 }
 
-export default UserProfile;
+export default connect(null, { getUserInfo })(UserProfile);

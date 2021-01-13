@@ -1,11 +1,15 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import { connect } from "react-redux";
+import { useHistory } from "react-router-dom";
+import { userLogin } from "../../actions/getDoctorReviews";
 import css from "../Login/Login.module.css";
 
-function Login() {
+const Login = ({ userLogin, isLoggedIn, loginFailed }) => {
   const [values, changeValues] = useState({
     email: ``,
     password: ``,
   });
+  const history = useHistory();
 
   //ask how form is cleared, how to add required
 
@@ -17,9 +21,18 @@ function Login() {
     });
   };
 
-  const handleSubmit = (e) => {
+  useEffect(() => {
+    if (isLoggedIn) {
+      if (localStorage.getItem("token")) history.push("/userprofile");
+      else alert("Login Failed");
+    }
+    if (loginFailed) alert("Wrong Credentials");
+  }, [isLoggedIn, loginFailed]);
+
+  const handleSubmit = async (e) => {
     e.preventDefault();
     //call here
+    await userLogin(values);
   };
 
   return (
@@ -65,6 +78,9 @@ function Login() {
       </div>
     </>
   );
-}
-
-export default Login;
+};
+const mapStateToProps = (state) => ({
+  isLoggedIn: state.getDoctorReviews.isLoggedIn,
+  loginFailed: state.getDoctorReviews.loginFailed,
+});
+export default connect(mapStateToProps, { userLogin })(Login);

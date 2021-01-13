@@ -22,7 +22,8 @@
   margin-bottom: 5rem;
   column-gap: 0.4rem;
 }
-
+/* // thodi der wait krna bs bhai m poori raat jaagi hui hu tu araam s aa */
+/* mai bs aaya  */
 .InnerFlex {
   margin: 30px 5px 15px;
   background-color: #fff;
@@ -30,7 +31,7 @@
   box-shadow: 0 2px 10px rgba(50, 50, 93, 0.1);
   padding: 45px 20px 20px;
   position: relative;
-  height: 320px;
+  height: 350px;
   display: flex;
   border-top: 4px solid #626ee3;
   flex-direction: column;
